@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+   <h1>Imagens dinâmicas</h1>
+   <p>Tente abri essa imagem em dispositivos diferentes ou aumente ou diminua a aba do seu navegador</p>
+    <picture>
+        <source media="(max-width: 700px )" srcset="imagens/foto-300.png" type="image/png">
+        <source media="(max-width: 1000px )" srcset="imagens/foto-700.png" type="image/png">
+        <img src="imagens/foto1000.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Colocando audio no site</h1>
+    <p>Vamos reproduzir audio em HTML.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Burbank Late Nights - Squadda B.mp3" type="audio/mpeg">
+        <source src="midia/Burbank Late Nights - Squadda B.ogg" type="audio/ogg">
+        <source src="midia/Burbank Late Nights - Squadda B.wav" type="audio/wav">
+        <p>Seu navegador não for compativel , basta clicar. <a href="midia/Burbank Late Nights - Squadda B.mp3"></a></p>
+    </audio>
+</body>
+</html>
